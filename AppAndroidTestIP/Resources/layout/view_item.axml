@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:padding = "@dimen/abc_action_bar_content_inset_material">
+	<android.support.design.widget.TextInputLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="3dp"
+         android:layout_marginBottom="3dp">
+    <EditText android:id="@+id/NameCatalog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Категория" />
+  </android.support.design.widget.TextInputLayout>
+  <android.support.design.widget.TextInputLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="3dp"
+          android:layout_marginBottom="3dp">
+    <EditText android:id="@+id/PriceCatalog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Пароль"/>
+  </android.support.design.widget.TextInputLayout>
+  <android.support.v7.widget.AppCompatButton
+      android:id="@+id/SaveElement"
+      android:textColor = "#ffffff"
+      android:background = "@android:color/holo_blue_dark"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="12dp"
+      android:layout_marginBottom="12dp"
+      android:padding="12dp"
+      android:text="Создать категорию"/>
+</LinearLayout>
