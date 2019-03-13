@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+	android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-	android:padding = "@dimen/abc_action_bar_content_inset_material">
+	android:padding = "10dp" >
+	<android.support.design.widget.TextInputLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="3dp"
+          android:layout_marginBottom="3dp">
+    <EditText android:id="@+id/PhotoCatalog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Посилання на зображення"/>
+  </android.support.design.widget.TextInputLayout>
 	<android.support.design.widget.TextInputLayout
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
@@ -12,8 +22,7 @@
     <EditText android:id="@+id/NameCatalog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:hint="Категория" />
+        android:hint="Назва каталогу" />
   </android.support.design.widget.TextInputLayout>
   <android.support.design.widget.TextInputLayout
           android:layout_width="match_parent"
@@ -23,8 +32,8 @@
     <EditText android:id="@+id/PriceCatalog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:hint="Пароль"/>
+        android:inputType="numberDecimal"
+        android:hint="Ціна"/>
   </android.support.design.widget.TextInputLayout>
   <android.support.v7.widget.AppCompatButton
       android:id="@+id/SaveElement"

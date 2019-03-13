@@ -2342,11 +2342,14 @@ namespace AppAndroidTestIP
 			// aapt resource value: 0x7f080035
 			public const int META = 2131230773;
 			
-			// aapt resource value: 0x7f0800b2
-			public const int NameCatalog = 2131230898;
-			
 			// aapt resource value: 0x7f0800b3
-			public const int PriceCatalog = 2131230899;
+			public const int NameCatalog = 2131230899;
+			
+			// aapt resource value: 0x7f0800b2
+			public const int PhotoCatalog = 2131230898;
+			
+			// aapt resource value: 0x7f0800b4
+			public const int PriceCatalog = 2131230900;
 			
 			// aapt resource value: 0x7f080036
 			public const int SHIFT = 2131230774;
@@ -2354,8 +2357,8 @@ namespace AppAndroidTestIP
 			// aapt resource value: 0x7f080037
 			public const int SYM = 2131230775;
 			
-			// aapt resource value: 0x7f0800b4
-			public const int SaveElement = 2131230900;
+			// aapt resource value: 0x7f0800b5
+			public const int SaveElement = 2131230901;
 			
 			// aapt resource value: 0x7f0800a1
 			public const int action0 = 2131230881;
@@ -2603,8 +2606,8 @@ namespace AppAndroidTestIP
 			// aapt resource value: 0x7f080061
 			public const int list_item = 2131230817;
 			
-			// aapt resource value: 0x7f0800b6
-			public const int masked = 2131230902;
+			// aapt resource value: 0x7f0800b7
+			public const int masked = 2131230903;
 			
 			// aapt resource value: 0x7f0800a4
 			public const int media_actions = 2131230884;
@@ -2867,8 +2870,8 @@ namespace AppAndroidTestIP
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f0800b5
-			public const int visible = 2131230901;
+			// aapt resource value: 0x7f0800b6
+			public const int visible = 2131230902;
 			
 			// aapt resource value: 0x7f08003c
 			public const int withText = 2131230780;

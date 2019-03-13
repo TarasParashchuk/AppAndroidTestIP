@@ -27,5 +27,10 @@ namespace AppAndroidTestIP.DataBase
         {
             db_conn.Insert(item);
         }
+
+        public void SaveItem(T item)
+        {
+            db_conn.Update(item);
+        }
     }
 }

@@ -37,6 +37,14 @@ namespace AppAndroidTestIP.Adapter
             }
         }
 
+        public override int Count
+        {
+            get
+            {
+                return data.Count;
+            }
+        }
+
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
             var view = convertView;
@@ -57,21 +65,12 @@ namespace AppAndroidTestIP.Adapter
                 view.Tag = viewHolder;
             }
 
-            ImageService.Instance.LoadUrl(item.PhotoUrl).WithCache(FFImageLoading.Cache.CacheType.All).Into(viewHolder.PhotoUrl);
+            ImageService.Instance.LoadUrl(item.PhotoUrl).WithCache(FFImageLoading.Cache.CacheType.All).DownSample(width: 70).FadeAnimation(false).Retry(3, 200).Into(viewHolder.PhotoUrl);
             viewHolder.NameCatalog.Text = item.Name;
             viewHolder.PriceCatalog.Text = item.Price + " грн.";
 
             return view;
         }
-
-        public override int Count
-        {
-            get
-            {
-                return data.Count;
-            }
-        }
-
     }
 
     class ListViewAdapterViewHolder : Java.Lang.Object

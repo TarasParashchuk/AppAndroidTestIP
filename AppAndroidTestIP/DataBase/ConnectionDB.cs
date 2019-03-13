@@ -12,7 +12,7 @@ namespace AppAndroidTestIP.DataBase
             return database;
         }
 
-        private static string GetDatabasePath(string sqliteFilename = "Catalog.db")
+        private static string GetDatabasePath(string sqliteFilename = "CatalogDataBase.db")
         {
             string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
             var path = Path.Combine(documentsPath, sqliteFilename);
